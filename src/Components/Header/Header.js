@@ -1,14 +1,39 @@
-import React from 'react'
-import './Header.css'
-import {config} from "../../config"
+import React from "react";
+import {
+  MainHeader,
+  MainContent,
+  WrapperBig,
+  Title,
+  MainNav,
+  Info
+} from "./style.js";
+import { config } from "../../config";
 
 export default function Header() {
-    return (
-        <div className="main-header">
-        <div className="wrap-big">
-            <h1 className="header-title">{config.title}</h1>
-            <h2 className="header-subtitle">{config.subtitle}</h2>
-            </div>
-        </div>
-    )
+  return (
+    <MainHeader>
+      <WrapperBig>
+        <MainNav>
+          <ul>
+            <li>
+              <a href="http://paulccari.com/">{config.subtitle}</a>
+            </li>
+            <li>
+              <a href="http://paulccari.com/portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a href="https://www.paulccari.com/contact.html">Contact me</a>
+            </li>
+          </ul>
+        </MainNav>
+        <MainContent>
+          <Title className="header-title">{config.title}</Title>
+          <Info>
+            <h4>Inspiration</h4>
+            <p>Providing the latest tips for developers and designers.</p>
+          </Info>
+        </MainContent>
+      </WrapperBig>
+    </MainHeader>
+  );
 }

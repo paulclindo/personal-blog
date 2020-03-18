@@ -10,7 +10,7 @@ export const config = {
   githubRepo: "personal-blog",
 
   // Your Personal Blog Title
-  title: "Blog",
+  title: "news",
 
   // Your Personal Blog Subtitle
   subtitle: "Paul Ccari"
