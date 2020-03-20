@@ -19,7 +19,7 @@ export default function BlogHome() {
 
   useEffect(() => {
     getBlogsFromGithubIssues();
-  }, []);
+  }, [getBlogsFromGithubIssues]);
 
   function getBlogsFromGithubIssues() {
     const client = new ApolloClient({
@@ -170,7 +170,11 @@ export default function BlogHome() {
               <div>
                 <p className="author-name">{blog.author.login}</p>
                 <p className="blog-date">
-                  {moment(blog.updatedAt).format("DD MMM YYYY")} . {readingTime(blog.body).minutes} Min Read . <a href={blog.url} target="_black">View On Github</a>
+                  {moment(blog.updatedAt).format("DD MMM YYYY")} .{" "}
+                  {readingTime(blog.body).minutes} Min Read .{" "}
+                  <a href={blog.url} target="_black">
+                    View On Github
+                  </a>
                 </p>
               </div>
             </div>
@@ -192,10 +196,14 @@ export default function BlogHome() {
           {addReaction && (
             <span className="reaction-github-emoji anim-scale-in">
               {/* <GithubSelector onSelect={emoji => onEmojiSelect(emoji)} /> */}
-              <GithubReactionTextCard link={blog.url}/>
+              <GithubReactionTextCard link={blog.url} />
             </span>
           )}
-          <GithubCounter counters={reactionCounter} onSelect={emoji => githubCounterEmojiSelect(emoji)} onAdd={() => githubCounterAddReaction()} />
+          <GithubCounter
+            counters={reactionCounter}
+            onSelect={emoji => githubCounterEmojiSelect(emoji)}
+            onAdd={() => githubCounterAddReaction()}
+          />
         </div>
       )}
     </div>

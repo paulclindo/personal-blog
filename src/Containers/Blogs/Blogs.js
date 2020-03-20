@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ApolloClient from "apollo-boost";
 import { gql } from "apollo-boost";
 import BlogHome from "../BlogPost/BlogPost";
-import Header from "../../Components/Header/Header";
+import Header from "../../Components/Header";
 import BlogCard from "../../Components/BlogCard/BlogCard";
 import { config } from "../../config";
 
@@ -11,7 +11,7 @@ function Blogs() {
 
   useEffect(() => {
     getBlogsFromGithubIssues();
-  }, []);
+  }, [getBlogsFromGithubIssues]);
 
   function getBlogsFromGithubIssues() {
     const client = new ApolloClient({

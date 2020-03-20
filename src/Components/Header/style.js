@@ -21,7 +21,7 @@ export const WrapperBig = styled.div`
   margin: auto;
 `;
 export const MainNav = styled.nav`
-  color: #000;
+  color: #121212;
 
   ul {
     list-style: none;
@@ -39,7 +39,7 @@ export const MainNav = styled.nav`
     text-align: center;
     &:first-child {
       text-align: left;
-      flex: 3 1 33.33%;
+      flex: 4 1 33.33%;
       justify-self: flex-end;
       @media only screen and (max-width: 768px) {
         display: none;
@@ -64,7 +64,7 @@ export const Title = styled.h1`
   line-height: 1.15;
   margin: 1.25rem 0;
   font-size: 8.5em;
-  color: #000;
+  color: #121212;
   text-transform: lowercase;
   font-weight: 800;
 
