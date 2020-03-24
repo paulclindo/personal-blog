@@ -16,9 +16,9 @@ export const config = {
   subtitle: "Paul Ccari",
   // Set it to true if you have a Github app to add to this project
   // and fill the client ID & secret
-  // enableOAuth: true,
-  // OAuthClientID: 'Iv1.9f40fd53257d4102',
-  // OAuthSecret: 'cc3db76ffe9848c92d83172807eececa79f0eb22',
+  enableOAuth: true,
+  OAuthClientID: 'Iv1.17d83ae6de42e497',
+  OAuthSecret: 'f1835eb51020b001cbc16b56af20b5862e95b900',
 
   // Header customization
   header: {
