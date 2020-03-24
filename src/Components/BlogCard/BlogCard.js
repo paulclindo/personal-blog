@@ -11,7 +11,7 @@ export default function BlogCard({ blog }) {
 
   useEffect(() => {
     getLabels();
-  }, []);
+  }, [getLabels]);
 
   function openBlog(title, number) {
     history.push(`/blog/${title}/${number}`);
@@ -23,6 +23,7 @@ export default function BlogCard({ blog }) {
     });
     setLables(lables);
   }
+
   return (
     <div className="blog-card-div">
       <div className="blog-card-header">
@@ -38,6 +39,9 @@ export default function BlogCard({ blog }) {
         <div>
           <p className="reading-time">{readingTime(blog.body).minutes} Min Read</p>
         </div>
+      </div>
+      <div className="image-container">
+        <img src="https://miro.medium.com/max/3832/1*G9XsIxODBSxmM2Iyqgal-g.png" alt=""/>
       </div>
       <div>
         <div className="blog-card-title">
