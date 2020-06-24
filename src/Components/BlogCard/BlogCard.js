@@ -28,29 +28,38 @@ export default function BlogCard({ blog }) {
     <div className="blog-card-div">
       <div className="blog-card-header">
         <div>
-          {lables.map(value => {
+          {lables.map((value) => {
             return (
-              <div key={value.id} className="blog-catgeory" style={{ backgroundColor: `#${value.color}` }}>
+              <div
+                key={value.id}
+                className="blog-catgeory"
+                style={{ backgroundColor: `#${value.color}` }}
+              >
                 {value.name}
               </div>
             );
           })}
         </div>
         <div>
-          <p className="reading-time">{readingTime(blog.body).minutes} Min Read</p>
+          <p className="reading-time">
+            {readingTime(blog.body).minutes} Min Read
+          </p>
         </div>
       </div>
       <div className="image-container">
-        <img src="https://miro.medium.com/max/3832/1*G9XsIxODBSxmM2Iyqgal-g.png" alt=""/>
+        <img
+          src="https://miro.medium.com/max/3832/1*G9XsIxODBSxmM2Iyqgal-g.png"
+          alt=""
+        />
       </div>
       <div>
         <div className="blog-card-title">
-          <h2 onClick={() => openBlog(blog.title, blog.number)}>{blog.title}</h2>
+          <h2 onClick={() => openBlog(blog.title, blog.number)}>
+            {blog.title}
+          </h2>
         </div>
         <div className="blog-card-description">
-          <p>
-            {blog.bodyText}
-          </p>
+          <p>{blog.bodyText}</p>
         </div>
         <div className="blog-card-footer"></div>
       </div>
