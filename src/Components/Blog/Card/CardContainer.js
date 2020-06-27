@@ -9,7 +9,6 @@ export const CardContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   box-shadow: rgba(21, 28, 72, 0.1) 0px 5px 24px 1px;
 
   :hover {
