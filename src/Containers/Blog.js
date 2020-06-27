@@ -55,7 +55,7 @@ const Blog = () => {
   }, [loading, error, data]);
 
   return (
-    <>
+    <div style={{backgroundColor: '#fffff7'}}>
       <Header />
       <BlogContainer>
         {
@@ -66,7 +66,7 @@ const Blog = () => {
             })
         }
       </BlogContainer>
-    </>
+    </div>
   );
 }
 

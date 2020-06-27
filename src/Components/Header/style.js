@@ -7,6 +7,10 @@ export const MainHeader = styled.div`
   padding: 6em;
   padding-top: 0;
   background-color: #ffd701;
+  /* background-color: #FF6464; */
+  background: linear-gradient(to right, #ffed86, #ffd701); 
+  height: 50vh;
+
 
   @media only screen and (max-width: 768px) {
     padding: 2.5em;

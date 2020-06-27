@@ -9,12 +9,13 @@ export const CardContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  box-shadow: rgba(21, 28, 72, 0.1) 0px 5px 24px 1px;
-
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px;
+  transition: box-shadow .4s;
   :hover {
-    /* background-color: #F5F5F5; */
-    box-shadow: rgba(21, 28, 72, 0.1) 0px 3px 7px 0px,
-      rgba(21, 28, 72, 0.1) 0px 5px 24px 1px;
+  box-shadow: rgba(21, 28, 72, 0.1) 0px 5px 24px 1px;
+    /* box-shadow: rgba(21, 28, 72, 0.1) 0px 3px 7px 0px,
+      rgba(21, 28, 72, 0.1) 0px 5px 24px 1px; */
   }
 `;
 
