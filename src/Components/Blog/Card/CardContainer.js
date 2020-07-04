@@ -16,6 +16,13 @@ export const CardContainer = styled.div`
   box-shadow: rgba(21, 28, 72, 0.1) 0px 5px 24px 1px;
     /* box-shadow: rgba(21, 28, 72, 0.1) 0px 3px 7px 0px,
       rgba(21, 28, 72, 0.1) 0px 5px 24px 1px; */
+      
+  }
+  @media (max-width: 700px){
+    padding: 20px 25px;
+    height: 380px;
+    border-radius: 0;
+
   }
 `;
 

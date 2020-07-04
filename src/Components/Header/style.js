@@ -81,6 +81,8 @@ export const MainContent = styled.div`
   align-items: center;
   @media only screen and (max-width: 768px) {
     /* font-size: 3em; */
+    flex-direction: column;
+    align-items: flex-start;
   }
 `;
 export const Info = styled.div`
@@ -90,6 +92,6 @@ export const Info = styled.div`
     font-size: 0.9rem;
   }
   @media only screen and (max-width: 768px) {
-    /* font-size: 3em; */
+    margin-top: 0;
   }
 `;

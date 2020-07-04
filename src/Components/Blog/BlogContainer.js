@@ -9,4 +9,10 @@ export const BlogContainer = styled.div`
   width: 100%;
   max-width: 940px;
   padding: 20px 10px;
+  @media (max-width: 700px){
+    grid-template-columns: 100%;
+    padding: 0;
+    grid-gap: unset;
+    grid-row-gap: 1rem;
+  }
 `;

@@ -63,7 +63,7 @@ const Blog = () => {
           ? <Loader />
           : posts.map((v, i) => {
               return <Card blog={v} key={i} />;
-            })
+            }).reverse()
         }
       </BlogContainer>
     </div>
